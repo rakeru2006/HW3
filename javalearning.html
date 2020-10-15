@@ -226,12 +226,32 @@ document.getElementById("LearnObjectsC").innerHTML = "The car type is " + car.co
             
 
 
+            var passwordLetter = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+            
+            var texLetter = [ ];
+            for (var j=0; j< passwordLetter.length; j++) 
+            {
+            console.log( passwordLetter[j]);
+           
+        var anyLetter = Math.floor(Math.random() * passwordLetter.length);
+            console.log(anyLetter);
+            
+            texLetter.push(passwordLetter[anyLetter]);
+            //print each time when we add a new element 
+         
+
+            }
+            document.write("Array Random Letters = "+texLetter );
 
 
 
+            var myArray = ['January', 'February', 'March'];  
+            const randomElement = array[Math.floor(Math.random() * array.length)];
+            const months = ["January", "February", "March", "April", "May", "June", "July"];
 
-
-
+const random = Math.floor(Math.random() * months.length);
+console.log(random, months[random]);
+document.write( months[random]);
 
 
   /*
