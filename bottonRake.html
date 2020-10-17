@@ -3,39 +3,207 @@
 <head>
 
 <button>Start</button>
-
+<p id="LongPasword"></p>
+<p id="LongPaswordcomplete"></p>
 <script >
 const button = document.querySelector('button');
 
 button.onclick = function() {
-  let num = prompt('¿Choose a number betwen 128 and 8 ?');
 
 
-  if  (isNaN( num )) {
-    alert("Input is not a number");
-} else {
+
+
+let num = prompt("¿Choose long of passwor betwen 128 and 8 ?");
+
+var password = "Inicio";
+
+if  (isNaN( num )) {
+    alert("Your Input is not a number please try again");
+    } 
+else {
     if ( num <= 7 )
-  {
-   alert('Your password is weak with'+ " "+ num  + " "+'elements intenta de nuevo');
-  }
- elseif ( num < 128 && num > 8 )
-  {
-   alert('Your password will have '+ " "+ num  + " "+'elements');
-  }
+        {
+        alert("Your password is weak with"+ " "+ num  + " "+ "elements try again");
+        }
+    else if ( num <= 128 && num >= 8 )
+        {
+         
+        alert("Your password is secure an will have  "+ " "+ num  + " "+"elements");
+
+
+        var passNum = window.confirm('Do you want numbers in your password?');
+        if (passNum) {
+            num=num-1;
+            console.log(num);
+            //Call function that generate password with number
+            passwordN =  passwordWithNumber(1);
+            alert(passwordN);
+            }
+        else {
+        //some code
+        alert("No  numbers ");
+        }
+
+        var passUpChar = window.confirm('Do you want Uper Letter in your password?');
+        if (passUpChar) {
+            num=num-1;
+            console.log(num);
+            //Call function that generate password with chart
+            passwordUL = passwordWithUpLetter(1)
+            alert(passwordUL);
+
+            }
+        else {
+        //some code
+        alert("No Uper Letter ");
+        }
+
+        var passChar = window.confirm('Do you want Lower Letter in your password?');
+        if (passChar) {
+            num=num-1;
+            console.log(num);
+            //Call function that generate password with chart
+            passwordsm =  passwordWithsmLetter(1)
+            alert(passwordsm);
+
+            }
+        else {
+        //some code
+        alert(" No Lower Letter ");
+        }
+
+
+            
+            //Call function that generate password with number
+            passwordCE =  passworCaracterSpe(num);
+            console.log(num);
+            
+
+        
+
+        //    console.log(elements.join(''))
+        var longpasw= passwordN+passwordUL + passwordsm +passwordCE ;
+        //var complete=longpasw.join('');
+        //console.log(complete);
+        document.getElementById("LongPasword").innerHTML = longpasw;
+        //document.getElementById("LongPaswordcomplete").innerHTML = complete;
+    }
+
+    else
+        {
+        alert("Your password is to long with "+ " "+ num  + " "+"elements Try again");
+        }
+    }
+}
  
-  else
+
+function passworCaracterSpe(num) {
+    var passwordCaracter = ["+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^","~", "*", "?", ":"]
+
+//  document.write("Array Random Caracteres = "+ passwordCaracter);
+  var texCaracter = [ ];
+  for (var k=0; k< num; k++) 
   {
+  console.log( passwordCaracter[k]);
+ 
+var anyCaracter = Math.floor(Math.random() * passwordCaracter.length);
+  console.log(anyCaracter );
   
-  alert('Your password content'+ " "+ num  + " "+'elements');
+  texCaracter.push(passwordCaracter[anyCaracter ]);
+  //print each time when we add a new element 
+
   }
-  
-  
+
+  return texCaracter;
 }
 
-}
- 
+function passwordWithNumber(num) {
 
+var passwordNumber = [0,1,2,3,4,5,6,7,8,9];
+        var texNumber = [ ];
+        for (var i=0; i< num; i++) 
+        {
+        console.log( passwordNumber[i]);
+        var anyNumber = Math.floor(Math.random() * passwordNumber.length)
+        console.log(anyNumber);
+        //alert("numero en el array ["+i+"]= "+anyNumber);
+        //document.write(anyNumber);
+        texNumber.push(anyNumber);
+        //print each time when we add a new element 
+        //document.write("Array number"+texNumber );
+        }
+        console.log( texNumber);
+        //document.write("Array Random Numbers = "+texNumber );
+return texNumber;
+}
+
+
+
+function passwordWithUpLetter(num) {
+
+var passwordLetter = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+        
+        var texLetter = [ ];
+        for (var j=0; j< num; j++) 
+        {
+        console.log( passwordLetter[j]);
+       
+    var anyLetter = Math.floor(Math.random() * passwordLetter.length);
+        console.log(anyLetter);
+        
+        texLetter.push(passwordLetter[anyLetter]);
+        //print each time when we add a new element 
+        console.log(texLetter);
+
+        }
+        //document.write("Array Random Letters = "+ texLetter );
+
+return texLetter;
+}
+
+function passwordWithsmLetter(num) {
+
+var passwordsmLetter = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+        
+        var texsmLetter = [ ];
+        for (var l=0; l< num; l++) 
+        {
+        console.log( passwordsmLetter[l]);
+       
+    var anysmLetter = Math.floor(Math.random() * passwordsmLetter.length);
+        console.log(anysmLetter);
+        
+        texsmLetter.push(passwordsmLetter[anysmLetter]);
+        //print each time when we add a new element 
+        console.log(texsmLetter);
+
+        }
+        //document.write("Array Random Letters = "+ texLetter );
+
+return texsmLetter;
+}
+
+
+function passworCaracterSpe(num) {
+    var passwordCaracter = ["+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^","~", "*", "?", ":"]
+
+//  document.write("Array Random Caracteres = "+ passwordCaracter);
+  var texCaracter = [ ];
+  for (var k=0; k< num; k++) 
+  {
+  console.log( passwordCaracter[k]);
+ 
+var anyCaracter = Math.floor(Math.random() * passwordCaracter.length);
+  console.log(anyCaracter );
   
+  texCaracter.push(passwordCaracter[anyCaracter ]);
+  //print each time when we add a new element 
+
+  }
+
+  return texCaracter.toString();
+}
+
 
 
 
