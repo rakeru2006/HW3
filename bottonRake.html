@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<button>Start</button>
+
+<script >
+const button = document.querySelector('button');
+
+button.onclick = function() {
+  let num = prompt('¿Choose a number betwen 128 and 8 ?');
+
+
+  if  (isNaN( num )) {
+    alert("Input is not a number");
+} else {
+    if ( num <= 7 )
+  {
+   alert('Your password is weak with'+ " "+ num  + " "+'elements intenta de nuevo');
+  }
+ elseif ( num < 128 && num > 8 )
+  {
+   alert('Your password will have '+ " "+ num  + " "+'elements');
+  }
+ 
+  else
+  {
+  
+  alert('Your password content'+ " "+ num  + " "+'elements');
+  }
+  
+  
+}
+
+}
+ 
+
+  
+
+
+
+</script>
+</head>
+<body>
+
+
+
+</body>
+</html>
