@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="functionNumber"></p>
+
+<script>
+
+
+
+function passwordWithNumber(num) {
+
+    var passwordNumber = [0,1,2,3,4,5,6,7,8,9];
+            var texNumber = [ ];
+            for (var i=0; i< passwordNumber.length; i++) 
+            {
+            console.log( passwordNumber[i]);
+           
+            var anyNumber = Math.floor(Math.random() * passwordNumber.length)
+            console.log(anyNumber);
+            //alert("numero en el array ["+i+"]= "+anyNumber);
+            //document.write(anyNumber);
+
+            
+            texNumber.push(anyNumber);
+            //print each time when we add a new element 
+            //document.write("Array number"+texNumber );
+
+            }
+            console.log( texNumber);
+            //document.write("Array Random Numbers = "+texNumber );
+
+  return texNumber;
+}
+
+
+
+
+
+document.getElementById("functionNumber").innerHTML = passwordWithNumber(6);
+</script>
+
+</body>
+</html>

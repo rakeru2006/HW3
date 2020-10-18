@@ -43,13 +43,7 @@ else {
             console.log(num);
             //Call function that generate password with number
             passwordN =  passwordWithNumber(num);
-
-
-       
             alert(passwordN);
-             
-          
-
             }
         else {
         //some code
@@ -61,7 +55,7 @@ else {
            // num=num-1;
             console.log(num);
             //Call function that generate password with chart
-            passwordUL = passwordWithUpLetter(num);
+            passwordUL = passwordWithUpLetter(num)
             alert(passwordUL);
             //var auxPasArray= [];
 
@@ -85,33 +79,20 @@ else {
         alert(" No Lower Letter ");
         }
 
-        var passSPChar = window.confirm('Do you want spetial caracters in your password?');
-        if (passSPChar) {
-            //num=num-1;
-            console.log(num);
-            //Call function that generate password with chart
-            passwordSP =  passworCaracterSpe(num)
-            alert(passwordSP);
 
-            }
-        else {
-        //some code
-        alert(" No Lower Letter ");
-        }
             
             //Call function that generate password with number
-           // passwordCE =  passworCaracterSpe(num);
+            passwordCE =  passworCaracterSpe(num);
             console.log(num);
             
 
         
 
         //    console.log(elements.join(''))
-        var longpasw= passwordN+passwordUL + passwordsm +passwordSP ;
+        var longpasw= passwordN+passwordUL + passwordsm +passwordCE ;
         //var complete=longpasw.join('');
         //console.log(complete);
-        document.getElementById("LongPasword").innerHTML = longpasw.replace(\,/g,'/');
-
+        document.getElementById("LongPasword").innerHTML = longpasw;
         //document.getElementById("LongPaswordcomplete").innerHTML = complete;
     }
 
@@ -124,7 +105,7 @@ else {
  
 
 function passworCaracterSpe(num) {
- var passwordCaracter = ["+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^","~", "*", "?", ":"]
+   // var passwordCaracter = ["+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^","~", "*", "?", ":"]
 
 //  document.write("Array Random Caracteres = "+ passwordCaracter);
   var texCaracter = [ ];
@@ -145,7 +126,7 @@ var anyCaracter = Math.floor(Math.random() * passwordCaracter.length);
 
 function passwordWithNumber(num) {
 
-var passwordNumber = [0,1,2,3,4,5,6,7,8,9];
+//var passwordNumber = [0,1,2,3,4,5,6,7,8,9];
         var texNumber = [ ];
         for (var i=0; i< num; i++) 
         {
