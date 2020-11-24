@@ -1,18 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE HTML>
+    <html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Password</title>
+        
+        <link href="style.css" type="text/css" rel="stylesheet">
+       
+
 </head>
 <body>
 
-    <p> Click to generate a secure password: </p>
+ 
 
-    <button>Start</button>
+
+
     
-    <p id="LongPaswordcomplete"></p>
+    <div style="position:relative;">
+     
+      <div style="opacity:0.3;position:absolute;left:30px;top: 30px;width:360px;height:130px;background-color:#73AD21"></div>
+      <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+        <h1>  Generate secure password: </h1>
+        
+
+    <!--<button>Start</button>. -->
+    <button class="button">Click please</button>
+    
+        <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:25px;">Generate pasword.....</div>
+        <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:30px;">
+            <p id="LongPaswordcomplete"></p>   
+       
+      </div>
+    </div>
+    
+   
+
+
+
+    
 
 </body>
-
-
 
 <script >
 const button = document.querySelector('button');
@@ -88,8 +114,8 @@ button.onclick = function() {
         console.log(shuffle(passwordfinal));
         }
     }
-    document.getElementById("LongPaswordcomplete").innerHTML = "Final Password " + shuffle(passwordfinal);
-
+    document.getElementById("LongPaswordcomplete").innerHTML = "Your safe password " + shuffle(passwordfinal);
+    
 }
 
 
