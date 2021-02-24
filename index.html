@@ -1,43 +1,24 @@
 <!DOCTYPE HTML>
     <html lang="en-US">
     <head>
-        <meta charset="UTF-8">
-        <title>Password</title>
-        
-        <link href="style.css" type="text/css" rel="stylesheet">
-       
-
+    <meta charset="UTF-8">
+    <title>Password</title>    
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-
- 
-
-
-
-    
-    <div style="position:relative;">
-     
-      <div style="opacity:0.3;position:absolute;left:30px;top: 30px;width:360px;height:130px;background-color:#73AD21"></div>
-      <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+<div style="position:relative;">
+    <div style="opacity:0.3;position:absolute;left:30px;top: 30px;width:360px;height:130px;background-color:#73AD21"></div>
+        <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
         <h1>  Generate secure password: </h1>
-        
-
-    <!--<button>Start</button>. -->
-    <button class="button">Click please</button>
-    
-        <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:25px;">Generate pasword.....</div>
-        <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:30px;">
+        <!--<button>Start</button>. -->
+        <button class="button">Click please</button>    
+            <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:25px;">Generate pasword.....</div>
+            <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:30px;">
             <p id="LongPaswordcomplete"></p>   
-       
-      </div>
-    </div>
+            </div>
+        </div>
     
-   
-
-
-
-    
-
+</div>
 </body>
 
 <script >
@@ -125,15 +106,14 @@ function getRandomInt(n) {
 function shuffle(s) {
   var arr = s.split('');           // Convert String to array
   var n = arr.length;              // Length of the array
-  
-  for(var i=0 ; i<n-1 ; ++i) {
+
+    for(var i=0 ; i<n-1 ; ++i) {
     var j = getRandomInt(n);       // Get random of [0, n-1]
     
     var temp = arr[i];             // Swap arr[i] and arr[j]
     arr[i] = arr[j];
     arr[j] = temp;
-  }
-  
+    }
   s = arr.join('');                // Convert Array to string
   return s;                        // Return shuffled string
 }
@@ -165,7 +145,6 @@ var passwordLetter = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O
         var texLetter = [ ];
         for (var j=0; j< num; j++) 
         {
-       
     var anyLetter = Math.floor(Math.random() * passwordLetter.length);
         
         texLetter.push(passwordLetter[anyLetter]);
@@ -184,7 +163,6 @@ var passwordsmLetter = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n",
         var texsmLetter = [ ];
         for (var l=0; l< num; l++) 
         {
-       
     var anysmLetter = Math.floor(Math.random() * passwordsmLetter.length);
         
         texsmLetter.push(passwordsmLetter[anysmLetter]);
@@ -201,37 +179,31 @@ function passworCaracterSpe(num) {
     var passwordCaracter = ["+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^","~", "*", "?", ":"]
 
 //  document.write("Array Random Caracteres = "+ passwordCaracter);
-  var texCaracter = [ ];
-  for (var k=0; k< num; k++) 
-  {
- 
+    var texCaracter = [ ];
+    for (var k=0; k< num; k++) 
+    {
 var anyCaracter = Math.floor(Math.random() * passwordCaracter.length);
-  
-  texCaracter.push(passwordCaracter[anyCaracter ]);
+
+    texCaracter.push(passwordCaracter[anyCaracter ]);
   //print each time when we add a new element 
 
-  }
+}
 
-  return texCaracter.toString();
+return texCaracter.toString();
 }
 
 /* Function to generate combination of password */ 
 function generateDefaultP(num) { 
             var pass = ''; 
             var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +  
-                    'abcdefghijklmnopqrstuvwxyz'+'0123456789'+'+-&|!(){}[]^~*?:'; 
-              
+                    'abcdefghijklmnopqrstuvwxyz'+'0123456789'+'+-&|!(){}[]^~*?:';               
             for (i = 1; i <= num; i++) { 
                 var char = Math.floor(Math.random() 
-                            * str.length + 1); 
-                  
+                            * str.length + 1);                   
                 pass += str.charAt(char) 
-            } 
-              
+            }               
             return pass.toString(); 
         } 
-
-
 
 </script>
 
