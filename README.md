@@ -5,7 +5,7 @@
 
 
 This project is in this github repository [Github](https://github.com/rakeru2006/HW3)
-and can visualize in [GitHub Pages](https://rakeru2006.github.io/HW3/)
+and can visualize demo running on  [GitHub Pages](https://rakeru2006.github.io/HW3/)
 
 
 ## Table of Contents :pushpin:
@@ -77,7 +77,7 @@ Make sure to call your javascript file
 ***
 
 
-Demo
+
 
 ![demo](https://github.com/rakeru2006/HW3/blob/master/pw.png?raw=true)
 
