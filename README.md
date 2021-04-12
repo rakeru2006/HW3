@@ -4,7 +4,7 @@
 ***
 
 
-This project is in this github repository [Github](https://github.com/rakeru2006/HW3))
+This project is in this github repository [Github](https://github.com/rakeru2006/HW3)
 and can visualize in [GitHub Pages](https://rakeru2006.github.io/HW3/)
 
 
@@ -79,7 +79,7 @@ Make sure to call your javascript file
 
 Demo
 
-![demo](https://github.com/rakeru2006/Unit-17-NoSQL-Homework-Workout-Tracker/blob/main/workout.png?raw=true)
+![demo](https://github.com/rakeru2006/HW3/blob/master/pw.png?raw=true)
 
 
 
@@ -105,7 +105,7 @@ You can participate with this project with one of the following examples:
 :question:
 ***
 
-For questions contact [Email](http://github.com)
+To consult more information [Github](http://github.com)
 
 ## License :cop: :guardsman:
 :key:
