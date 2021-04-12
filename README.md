@@ -1,20 +1,46 @@
-# 03 JavaScript: Password Generator
+# :sparkles:  Unit3 Password generator   :sparkles:
+================
+## Author :bowtie:
+***
 
-## Your Task
 
-This week’s homework requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+This project is in this github repository [Github](https://github.com/rakeru2006/HW3))
+and can visualize in [GitHub Pages](https://rakeru2006.github.io/HW3/)
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
 
-## User Story
+## Table of Contents :pushpin:
+***
+  - [Description](#Description)
+  - [Usage](#Usage)
+  - [Installation](#Installation)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [Questions FAQs](#Questions-faqs)
+  - [License](#License)
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
 
-## Acceptance Criteria
+## Description
+:bulb:
+  ***
+  This web create an application that anyone an  can use to generate a random password 
+  based on criteria they’ve selected by modifying starter code. 
+ 
+
+
+
+## Usage
+:speech_balloon:  :hammer: :eyeglasses:
+  ***
+We are going to create this code to show, help and Learn
+
+
+This app run in the browser, and feature dynamically updated HTML and CSS powered by JavaScript
+
+## Installation
+:feet:
+***
+
+Small description step by step that tells how to run and develop the aplication
 
 ```
 GIVEN I need a new, secure password
@@ -34,60 +60,84 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-## Mock-Up
+Make sure to call your css file 
 
-The following image shows the web application's appearance and functionality:
+```
+ <link rel="stylesheet" href="./style.css" />
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+```
+Make sure to call your javascript file 
 
-## Grading Requirements
+```
+  <script src="./script.js"></script>
 
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+```
+## Tests
+:eyes:
+***
 
 
-## Review
+Demo
 
-You are required to submit the following for review:
+![demo](https://github.com/rakeru2006/Unit-17-NoSQL-Homework-Workout-Tracker/blob/main/workout.png?raw=true)
 
-* The URL of the deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Contributing
+:man_with_gua_pi_mao:
+***
+You can participate with this project with one of the following examples:
+ 
+ Report a bug,Fix errors,Suggest a new feature, add features,Help improve the project,Other
+
+ 
+```
+1. Fork of the repository.
+2. Clone the repository.
+3. Update the master branch.
+4. Create a branch.
+5. Make changes.
+6. Make a Pull Request.
+
+```
+
+## Questions FAQs
+:question:
+***
+
+For questions contact [Email](http://github.com)
+
+## License :cop: :guardsman:
+:key:
+  ***
+  This project going to used this license:
+  ~~~
+  MIT
+  ~~~
+
+  You can read more about this in
+  A list of the most common permissive licenses are MIT, Apache 2.0, ISC, and BSD.technologies used in projects
+
+  | License Identifier| FSF Free? | OSI Approved? |
+  |:--------------|:-------------:|--------------:|
+  | MIT| Y | Y|
+  | Apache_2.0 | Y | Y|
+  | ISC | Y | Y |
+  | BSD |  | Y |
+  | GNU GPLv3 | Y | Y |
+
+
+  * [MIT](https://spdx.org/licenses/MIT.html)
+  * [Apache_2.0 ](https://spdx.org/licenses/Apache-2.0.html)
+  * [ISC](https://spdx.org/licenses/ISC.html)
+  * [BSD](https://spdx.org/licenses/BSD-1-Clause.html)
+  * [GNU GPLv3] (https://spdx.org/licenses/GPL-3.0-only.html
+
+  > Maybe you want to search more of this part.
+  > This is how you do it.SPDX License List
+  > The SPDX License List itself is a list of commonly found licenses and
+  > exceptions used in free and open or collaborative software, data, hardware,
+  > or documentation. The SPDX License List includes a standardized short identifier,
+  > the full name, the license text, and a canonical
+  > permanent URL for each license and exception.
+  > [SPDX License List](https://spdx.org/licenses/)
