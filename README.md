@@ -13,8 +13,8 @@ and can visualize demo running on  [GitHub Pages](https://rakeru2006.github.io/H
   - [Description](#Description)
   - [Usage](#Usage)
   - [Installation](#Installation)
-  - [Contributing](#Contributing)
   - [Tests](#Tests)
+  - [Contributing](#Contributing)
   - [Questions FAQs](#Questions-faqs)
   - [License](#License)
 
